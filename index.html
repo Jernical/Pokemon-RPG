@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<!--Head-->
+<head>
+    
+<!--JQuery-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+<!--Mobile Responsive-->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <title>Pokémon RPG</title>
+    <link rel="icon" type="image/jpeg" href="assets/Images/Pokeball icon.png">
+
+<!--Google Font-->
+    <link href="https://fonts.googleapis.com/css?family=Press+Start+2P" rel="stylesheet">
+
+<!--CSS-->
+    <link rel="stylesheet" href="assets/CSS/style.css">
+    <link rel="stylesheet" href="assets/CSS/reset.css">
+
+<!--Bootstrap (WAS NO USED, LINKED JUST INCASE I DID)-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"></head>
+
+<!--Body-->
+<body>
+
+<!--MAIN-->
+<div class="main-container">
+
+    <header class="header">
+        <img id="pokemon-logo" alt="pokemon-logo" src="assets/Images/pokemon-logo-png-pokemon-logo-png-2000.png">
+    </header>
+
+        <!--GameOver-->
+    <div class="game-over-container"></div>
+    <div class="game-over-text-container"></div>
+
+        <!--Pick Pokemon-->
+    <div class="starter-selection">
+
+        <img class="character" id="bulbasaur" alt="bulbasaur" src="assets/Images/bulbasaur.png">
+        <img class="character" id="charmander" alt="charmander" src="assets/Images/charmander.png">
+        <img class="character" id="squirtle" alt="squirtle" src="assets/Images/squirtle.png">
+        <img class="character" id="mewtwo" alt="mewtwo" src="assets/Images/mewtwo.png">
+        <img class="character" id="pikachu" alt="pikachu" src="assets/Images/pikachu.png">
+    
+    </div>
+    <div id="starter-pokemon-text">Select Your Pokémon</div>
+
+        <!--Stadium-->
+
+    <div class="stadium">
+        <img id="pokemon-stadium" src="assets/Images/stadium.png">
+
+            <!--Player-->
+            <div id="player-pokemon-name"></div>
+            <div id="player-pokemon-type"></div>
+            <div id="player-pokemon-hp"></div>
+
+            <!--Enemy-->
+            <div id="enemy-pokemon-name"></div>
+            <div id="enemy-pokemon-type"></div>
+            <div id="enemy-pokemon-hp"></div>
+            
+            <!--Player/Enemy fight corners-->
+            <div id="player-fight-stadium" style="    left: 72px;
+            top: 180px;
+            width: 150px;
+            height: 150px;
+            margin: 0px;"></div>
+            <div id="enemy-fight-stadium"></div>
+    </div>
+
+<!--Button-->
+    <button id="attack-button">Attack</button>
+
+<!--Main-END/Footer-->
+</div>
+    <div id="footer"><h1>© Copyright 2019 Suraj A Patel</h1></div>
+<!--JS-->
+    <script src="assets/Javascript/game.js"></script>
+
+</body>
+</html>
